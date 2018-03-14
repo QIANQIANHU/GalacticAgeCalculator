@@ -186,6 +186,7 @@ update package.json  in “scripts”{},:
 $ npm run lint
 * Adding Front-End Dependencies
 jquery
+$ npm install popper.js --save
 $ npm install jquery --save
 add to src/main.js :
 import $ from 'jquery';
