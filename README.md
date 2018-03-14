@@ -272,7 +272,8 @@ update webpack.config.js with contents:
         test: /\.js$/,
         exclude: [
           /node_modules/,
-          /spec/
+          /spec/,
+          /js/
         ],
         loader: "eslint-loader"
       }
