@@ -1,6 +1,5 @@
 import './styles.css';
 import $ from 'jquery';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { triangle } from './triangle';
 
@@ -10,7 +9,9 @@ $(document).ready(function() {
     var sideOne = $('#sideOne').val();
     var sideTwo = $('#sideTwo').val();
     var sideThree = $('#sideThree').val();
+    console.log(sideOne);
     var output = triangle(sideOne,sideTwo,sideThree);
+    console.log(output);
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
     });
