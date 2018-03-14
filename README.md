@@ -1,16 +1,17 @@
-# Number-game WebPage
+# Triangle checker WebPage
 
-#### This is a WebPage to play a number game.
+#### This is a WebPage to check if three sides can be a triangle.
 
-#### By Qianqian Hu 2018/01/19
+#### By Qianqian Hu 2018/03/13
 
 ## Description
 
-This webpage will show some funny words if user input a number.
+This webpage will show some funny words if user input three lengths of sides.
 
 ## Setup/Installation Requirements
+* run $ git clone https://github.com/QIANQIANHU/triangle-JS in terminal, this project with package.json, in the root directory, run $ npm install
 
-* node file setting
+* node file setup instruction
 
 $ brew install node (if node not install)
 
@@ -23,7 +24,7 @@ check node version(in your home directory)
 $ node -v/$ npm -v (check node version)
 $ node hello.js
 
-1.Initializing npm(setup new project)
+1. Initializing npm(setup new project)
 * create a folder called triangle and navigate to the root directory and run $npm init -y
 have package.json files
 * Installing an npm Package
@@ -41,7 +42,7 @@ dist/
 run $ npm install
 then $ npm run build
 
-3.Webpack dependency graph (recursively manage)
+3. Webpack dependency graph (recursively manage)
 * touch main.js file as entry point(include interface logic) looks like:
 import './styles.css';
 import $ from 'jquery';
@@ -65,8 +66,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   }
-};
-4.build project other folders and files(bold ones)
+};__(remove the end two underscores)
+
+4. build project other folders and files(bold ones)
 * building JavaScripts
 triangle/
 |_ dist
@@ -180,7 +182,7 @@ update package.json  in “scripts”{},:
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js"
-  },
+  },*(remove the end*)
 $ npm run lint
 * Adding Front-End Dependencies
 jquery
@@ -203,7 +205,7 @@ old
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js"
-  },
+  },*(remove the end*)
 new
 "scripts": {
   "test": "jasmine"
@@ -298,4 +300,4 @@ Contact email: huqianqian@ymail.com
 
 ### License
 
-Copyright (c) 2017 **qh**
+Copyright (c) 2018 **qh**
