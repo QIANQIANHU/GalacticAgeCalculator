@@ -11,6 +11,4 @@ Triangle.prototype.checkType = function(){
   }
 };
 
-
-
 exports.triangleModule = Triangle;
