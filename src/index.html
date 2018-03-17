@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>triangle</title>
+    <title>Galactic Age Calculator</title>
   </head>
   <body class = "jumbotron">
-      <form id="triangle-form">
-        <label for="sideOne">Enter the first side length:</label>
-        <input id="sideOne" type="number">
-<br>
-        <label for="sideTwo">Enter the second side length:</label>
-        <input id="sideTwo" type="number">
-<br>
-        <label for="sideThree">Enter the third side length:</label>
-        <input id="sideThree" type="number">
-<br>
-        <button type="submit">Submit</button>
-      </form>
-      <ul id="solution"></ul>
+      <form id="ageCalculator-form">
 
+        <label for="userBirthday">Enter your birthday(eg:1999-02-10): </label>
+        <input id="userBirthday" type="date">
+        <br>
+
+        <label for="averageLife">Average life expectancy:</label>
+        <input id="averageLife" type="number">
+        <br>
+
+        <button type="submit">Submit</button>
+        <br>
+          <div id="hideSecondBirthday">
+            <label for="secondUserBirthday">Enter your partner's birthday(eg:1999-02-10): </label>
+            <input id="secondUserBirthday" type="date">
+          </div>
+      </form>
+      <ul id="ageInYears"></ul>
+      <ul id="ageInSeconds"></ul>
+      <ul id="differentsInSeconds"></ul>
+      <ul id="inMercuryYears"></ul>
+      <ul id="inVenusYears"></ul>
+      <ul id="inMarsYears"></ul>
+      <ul id="inJupiterYears"></ul>
+      <ul id="yearsLeft"></ul>
   </body>
 </html>

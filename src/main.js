@@ -2,19 +2,19 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import './styles.css';
-import { Triangle } from './triangle';
+import { AgeCalculator } from './ageCalculator';
 
 $(document).ready(function() {
-  $('#triangle-form').submit(function(event) {
+  $('#ageCalculator-form').submit(function(event) {
     event.preventDefault();
-    var sideOne = $('#sideOne').val();
-    var sideTwo = $('#sideTwo').val();
-    var sideThree = $('#sideThree').val();
+    var birthday = $('#userBirthday').val();
+    var expectancyLife = $('#averageLife').val();
+    var secondBirthday = $('#secondUserBirthday').val();
 
-    var output = Triangle(sideOne,sideTwo,sideThree);
+    var output = AgeCalculator(birthday,expectancyLife,secondBirthday);
 
-    output.forEach(function(element) {
-      $('#solution').append("<li>" + element + "</li>");
-    });
+    // output.forEach(function(element) {
+    //   $('#solution').append("<li>" + element + "</li>");
+    // });
   });
 });
