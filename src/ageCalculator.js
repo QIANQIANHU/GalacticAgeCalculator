@@ -4,11 +4,20 @@ function AgeCalculator(birthday, expectancyLife, secondBirthday) {
   this.expectancyLife = expectancyLife;
   this.secondBirthday = secondBirthday;
 
-  let birthdayToString = this.birthday.toString();
-  let birthdayDevided = birthdayToString.split("-");
-  let yearOfBirth = parseInt(birthdayDevided[0]);
-  let monthOfBirth = parseInt(birthdayDevided[1]);
-  let dayOfBirth = parseInt(birthdayDevided[2]);
+  let birthdayOfInput = new Date(birthday);
+  let yearOfBirth = birthdayOfInput.getFullYear();
+  let monthOfBirth = birthdayOfInput.getMonth() + 1;
+  let dayOfBirth = birthdayOfInput.getDate() + 1;
+  this.yearOfBirth = yearOfBirth;
+  this.monthOfBirth = monthOfBirth;
+  this.dayOfBirth = dayOfBirth;
+
+  // let today = new Date();
+  // let currentYear = today.getFullYear();
+  // let currentMonth = today.getMonth()+1;
+  // let currentDay = today.getDate();
+
+
 
 
 
