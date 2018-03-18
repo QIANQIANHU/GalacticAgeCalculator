@@ -7,14 +7,21 @@ import { AgeCalculator } from './ageCalculator';
 $(document).ready(function() {
   $('#ageCalculator-form').submit(function(event) {
     event.preventDefault();
-    var birthday = $('#userBirthday').val();
-    var expectancyLife = $('#averageLife').val();
-    var secondBirthday = $('#secondUserBirthday').val();
+    let birthday = $('#userBirthday').val();
+    let expectancyLife = $('#averageLife').val();
+    let secondBirthday = $('#secondUserBirthday').val();
 
-    var output = AgeCalculator(birthday,expectancyLife,secondBirthday);
+    let newAgeCalculator = new AgeCalculator(birthday, expectancyLife, secondBirthday);
+    let earthAge = newAgeCalculator.earthAgeChecker();
+    $("#ageInYears").text(earthAge);
 
-    // output.forEach(function(element) {
-    //   $('#solution').append("<li>" + element + "</li>");
-    // });
+    let diffOfPartners = newAgeCalculator.diffOfPartnersChecker();
+    $("#differentsInSeconds").text(diffOfPartners);
+
+    let planetAge = newAgeCalculator.planetAgeChecker();
+    $("#planetAge").text(planetAge);
+
+    let expectancyLifeYears = newAgeCalculator.expectancyLifeChecker();
+    $("#expectancyLife").text(expectancyLifeYears);
+    });
   });
-});

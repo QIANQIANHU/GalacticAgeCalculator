@@ -9,10 +9,11 @@ describe('AgeCalculator',function(){
     expect(ageCalculator.yearOfBirth).toEqual(1990);
     expect(ageCalculator.monthOfBirth).toEqual(4);
     expect(ageCalculator.dayOfBirth).toEqual(5);
+    expect(ageCalculator.ageInYears).toEqual(28);
   });
-  // it('should correctly determine whether three lengths can be made into a ageCalculator', function(){
-  //   var notTriangle = new Triangle(3,8,22)
-  //   expect(notTriangle.checkType()).toEqual("not a ageCalculator");
+  // it('should correctly display users age by input the birthday in ageCalculator', function(){
+  //   var ageInYears = new AgeCalculator("1990-04-05", "89","1995-12-17")
+  //   expect(ageCalculator.ageInYears).toEqual(28);
   // });
 
 });
