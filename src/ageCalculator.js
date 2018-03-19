@@ -50,7 +50,7 @@ if (this.secondBirthday !== '') {
 
 AgeCalculator.prototype.planetAgeChecker = function(){
 if (this.ageInSeconds >= 0) {
-   return `Your Mercury age is ${this.ageInSeconds/0.24/31536000} seconds, the Venus age is  ${this.ageInSeconds/0.62/31536000} seconds, the Mars age is  ${this.ageInSeconds/1.88/31536000} seconds and the Jupiter  age is  ${this.ageInSeconds/11.86/31536000} seconds.`;
+   return `Your Mercury age is ${Math.round(this.ageInSeconds/0.24/31536000)} years, the Venus age is  ${Math.round(this.ageInSeconds/0.62/31536000)} years, the Mars age is  ${Math.round(this.ageInSeconds/1.88/31536000)} years and the Jupiter  age is  ${Math.round(this.ageInSeconds/11.86/31536000)} years.`;
  } else {
    return `Would you like to check your age on other planet next time?`;
  }
