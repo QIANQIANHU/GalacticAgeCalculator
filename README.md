@@ -1,15 +1,15 @@
-# Triangle checker WebPage
+# Super Galactic Age Calculator WebPage
 
-#### This is a WebPage to check if three sides can be a triangle.
+#### This is a WebPage to check user's age on different planet.
 
-#### By Qianqian Hu 2018/03/13
+#### By Qianqian Hu 2018/03/16
 
 ## Description
 
-This webpage will show some funny words if user input three lengths of sides.
+This webpage will show user's earth age in years and seconds, and display the age on different planets.
 
 ## Setup/Installation Requirements
-* run $ git clone https://github.com/QIANQIANHU/triangle-JS in terminal, this project with package.json, in the root directory, run $ npm install
+* run $ git clone https://github.com/QIANQIANHU/GalacticAgeCalculator in terminal, this project with package.json, in the root directory, run $ npm install
 
 * node file setup instruction
 
@@ -287,6 +287,7 @@ update webpack.config.js with contents:
 
 ## Technologies Used
 
+* ES6
 * Node
 * Jasmine
 * karma
