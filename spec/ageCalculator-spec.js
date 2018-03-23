@@ -1,4 +1,5 @@
-var AgeCalculator = require('./../src/ageCalculator.js').ageCalculatorModule;
+// var AgeCalculator = require('./../src/ageCalculator.js').ageCalculatorModule;
+import { AgeCalculator } from './../src/ageCalculator.js';
 
 describe('AgeCalculator',function(){
   it('should test whether the users value are taken by the ageCalculator Object',function(){
@@ -11,11 +12,13 @@ describe('AgeCalculator',function(){
     expect(ageCalculator.dayOfBirth).toEqual(5);
     expect(ageCalculator.ageInYears).toEqual(28);
   });
-});
+  it('should ask user to input real birthday if the birthday is after today', function(){
+    var ageOnEarth = new AgeCalculator("2111-04-05", "89","1995-12-17")
+    expect(ageOnEarth.earthAgeChecker()).toEqual("Please enter your real birthday.");
+  });
+  it('should give user age in earth years and seconds if the input birthday is real', function(){
+    var ageOnEarth = new AgeCalculator("2011-04-05", "89","1995-12-17")
+    expect(ageOnEarth.earthAgeChecker()).toEqual("You are 7 years old on earth and count in seconds your age");
+  });
 
-// describe('AgeCalculator',function(){
-//   it('should correctly check if user input real birthday', function(){
-//     var ageOnEarth = new AgeCalculator("2111-04-05", "89","1995-12-17")
-//     expect(ageOnEarth.earthAgeChecker).toEqual('Please enter your real birthday.');
-//   });
-// });
+});
