@@ -35,29 +35,29 @@ export class AgeCalculator {
 earthAgeChecker(){
 if (this.ageInYears >= 0) {
   console.log(this.ageInYears);
-    return `You are ${this.ageInYears} years old on earth and count in seconds your age`;
-    // is as ${this.ageInSeconds} seconds.
+    return `You are ${this.ageInYears} years old on earth and count in seconds your age is as ${this.ageInSeconds} seconds.`;
+
   } else {
     return `Please enter your real birthday.`;
   }
 };
 
-// AgeCalculator.prototype.diffOfPartnersChecker = function(){
-// this.diffOfPartners = Math.abs(this.ageInSeconds-this.secondAgeInSeconds);
-// if (this.secondBirthday !== '') {
-//    return `You and your partner are ${this.diffOfPartners} seconds different.`
-//  } else {
-//    return `Would you like to check the seconds-difference with your partner next time?`
-//  }
-// };
+diffOfPartnersChecker(){
+this.diffOfPartners = Math.abs(this.ageInSeconds-this.secondAgeInSeconds);
+if (this.secondBirthday !== '') {
+   return `You and your partner are ${this.diffOfPartners} seconds different.`
+ } else {
+   return `Would you like to check the seconds-difference with your partner next time?`
+ }
+};// write tests later
 
-// AgeCalculator.prototype.planetAgeChecker = function(){
-// if (this.ageInSeconds >= 0) {
-//    return `Your Mercury age is ${Math.round(this.ageInSeconds/0.24/31536000)} years, the Venus age is  ${Math.round(this.ageInSeconds/0.62/31536000)} years, the Mars age is  ${Math.round(this.ageInSeconds/1.88/31536000)} years and the Jupiter  age is  ${Math.round(this.ageInSeconds/11.86/31536000)} years.`;
-//  } else {
-//    return `Would you like to check your age on other planet next time?`;
-//  }
-// };
+planetAgeChecker(){
+if (this.ageInSeconds >= 0) {
+   return `Your Mercury age are ${Math.round(this.ageInSeconds/0.24/31536000)} years, the Venus age are ${Math.round(this.ageInSeconds/0.62/31536000)} years, the Mars age are ${Math.round(this.ageInSeconds/1.88/31536000)} years and the Jupiter age are ${Math.round(this.ageInSeconds/11.86/31536000)} years.`;
+ } else {
+   return `Would you like to check your age on other planet next time?`;
+ }
+};
 
 // AgeCalculator.prototype.expectancyLifeChecker = function(){
 //   if (this.expectancyLife <= 0){
