@@ -59,26 +59,26 @@ if (this.ageInSeconds >= 0) {
  }
 };
 
-// AgeCalculator.prototype.expectancyLifeChecker = function(){
-//   if (this.expectancyLife <= 0){
-//     return`Be positive, life is wonderful, give it a chance!`;
-//   }
-//
-//   if (this.expectancyLife > 120) {
-//     return`You are so positive, life is wonderful, but check your expectation of life, I mean on earth......`;
-//   }
-//
-//   if (this.expectancyLife <= (this.ageInYears + 10)) {
-//     return`Enjoy your life, you are doing so good! Try to explore more in the world!`;
-//   }
-//
-//   if (this.expectancyLife > (this.ageInYears + 10))
-//   {
-//    return `Your have ${this.expectancyLife - this.ageInYears} years left on the world, keep your healthy living style!`;
-//  } else {
-//    return `Would you like to check your age on other planet next time?`;
-//  }
-// };
+expectancyLifeChecker(){
+  if (this.expectancyLife <= 0){
+    return`Be positive, life is wonderful, give it a chance!`;
+  }
+
+  if (this.expectancyLife > 120) {
+    return`You are so positive, life is wonderful, but check your expectation of life, I mean on earth......`;
+  }
+
+  if (this.expectancyLife <= (this.ageInYears + 10)) {
+    return`Enjoy your life, you are doing so good! Try to explore more in the world!`;
+  }
+
+  if (this.expectancyLife > (this.ageInYears + 10))
+  {
+   return `Your have ${this.expectancyLife - this.ageInYears} years left on the world, keep your healthy living style!`;
+ } else {
+   return `Would you like to check your age on other planet next time?`;
+ }
+};
 
 };
 // exports.ageCalculatorModule = AgeCalculator;
